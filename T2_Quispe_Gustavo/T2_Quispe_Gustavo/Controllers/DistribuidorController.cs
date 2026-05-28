@@ -69,5 +69,37 @@ namespace T2_Quispe_Gustavo.Controllers
 
         }
 
+        //Get Eliminar
+
+        public IActionResult Eliminar(int? Id)
+        {
+            if (Id == null || Id == 0)
+            {
+                return NotFound();
+            }
+            var obj = _db.Distribuidor.Find(Id);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+        }
+
+        //Post Eliminar
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public IActionResult Eliminar(Distribuidor distribuidor)
+        {
+            if (distribuidor == null)
+            {
+                return NotFound();
+            }
+            _db.Distribuidor.Remove(distribuidor);
+            _db.SaveChanges();
+            return RedirectToAction(nameof(Index));
+
+        }
+
     }
 }
