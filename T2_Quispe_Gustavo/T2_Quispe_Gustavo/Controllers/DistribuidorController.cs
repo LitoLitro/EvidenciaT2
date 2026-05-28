@@ -23,6 +23,24 @@ namespace T2_Quispe_Gustavo.Controllers
             return View();
         }
 
+        //----
+        public IActionResult Alicorp()
+        {
+            return View();
+        }
+
+        public IActionResult Amazon()
+        {
+            return View();
+        }
+
+        public IActionResult GrupoAje()
+        {
+            return View();
+        }
+
+        //------------
+
         [HttpPost]
         [ValidateAntiForgeryToken]
 

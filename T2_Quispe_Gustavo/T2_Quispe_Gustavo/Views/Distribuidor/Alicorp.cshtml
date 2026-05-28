@@ -1,0 +1,209 @@
+﻿@{
+    ViewData["Title"] = "Alicorp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alicorp - Red de Distribución</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f4f7f6;
+            --accent-color: #ffc107;
+            --text-color: #333;
+            --light-text: #666;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--light-text);
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        /* Componentes de Medios (Imágenes y Videos) */
+        .media-container {
+            margin: 30px 0;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #000;
+        }
+
+            .media-container img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+        /* Contenedor Responsive para Video (Proporción 16:9) */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+            .video-wrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+
+        .caption {
+            background-color: #f8f9fa;
+            padding: 12px;
+            font-size: 0.9rem;
+            color: var(--light-text);
+            text-align: center;
+            border-top: 1px solid #dee2e6;
+        }
+
+        /* Grid de Beneficios / Pilares */
+        .features-grid {
+            display: flex;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            flex: 1;
+            min-width: 250px;
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+        }
+
+            .feature-card h3 {
+                color: var(--primary-color);
+                margin-bottom: 10px;
+                font-size: 1.2rem;
+            }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+            color: var(--light-text);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Alicorp</h1>
+        <div class="subtitle">Socio Estratégico en la Cadena de Distribución y Abastecimiento Nacional</div>
+
+        <p>
+            <strong>Alicorp</strong> es una de las empresas de consumo masivo más grandes e importantes de la región, cuyo éxito se fundamenta en un modelo de distribución altamente eficiente y capilar. Como pieza central de su estrategia comercial, el sistema de distribuidores exclusivos y mayoristas permite que el portafolio de productos —que abarca alimentos, cuidado del hogar y cuidado personal— llegue a cientos de miles de puntos de venta de manera oportuna, garantizando la frescura y disponibilidad de cada marca en el mercado.
+        </p>
+
+        <h2>Nuestra Red de Distribución: Conectando el Mercado</h2>
+        <p>
+            El ecosistema de distribución de Alicorp se caracteriza por una infraestructura logística de vanguardia y una estrecha colaboración con sus socios comerciales. Gracias a este enfoque integral, se logra una cobertura óptima que conecta las plantas de producción con los mercados tradicionales (bodegas, puestos de mercado) y los canales modernos (supermercados y tiendas de conveniencia).
+        </p>
+
+        <div class="media-container">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1100&q=80" alt="Centro de Distribución y Logística de Alicorp">
+            <div class="caption">Infraestructura logística de última generación para el abastecimiento y distribución a gran escala.</div>
+        </div>
+
+        <h2>Pilares de Valor para el Distribuidor</h2>
+        <p>
+            Ser distribuidor de Alicorp significa formar parte de una cadena de valor orientada al crecimiento conjunto y la transformación digital. La empresa fomenta la modernización de sus socios mediante herramientas tecnológicas avanzadas, capacitación constante y soporte comercial en el punto de venta.
+        </p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Logística Eficiente</h3>
+                <p style="font-size: 0.95rem;">Procesos automatizados de almacenamiento y despacho que minimizan tiempos y aseguran la disponibilidad continua de stock.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Transformación Digital</h3>
+                <p style="font-size: 0.95rem;">Uso de plataformas B2B que facilitan la toma de pedidos en tiempo real, optimizando la gestión comercial de la fuerza de ventas.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Desarrollo del Socio</h3>
+                <p style="font-size: 0.95rem;">Programas de mentoría y herramientas financieras para potenciar la rentabilidad y el crecimiento sostenible del distribuidor.</p>
+            </div>
+        </div>
+
+        <h2>Conoce Más Sobre Nuestro Proceso Logístico</h2>
+        <p>
+            A través del siguiente recurso audiovisual, se detallan los flujos operativos, las innovaciones tecnológicas implementadas en la gestión de almacenes y el compromiso diario de los transportistas y distribuidores para asegurar el abastecimiento de los hogares.
+        </p>
+
+        <div class="media-container">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/L9UD3sCdz_Y" title="Alicorp Logística y Distribución" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="caption">Video institucional: Innovación tecnológica y eficiencia en la cadena de suministro global.</div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Alicorp S.A.A. Todos los derechos reservados. Vista optimizada para integración en ASP.NET Core MVC.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

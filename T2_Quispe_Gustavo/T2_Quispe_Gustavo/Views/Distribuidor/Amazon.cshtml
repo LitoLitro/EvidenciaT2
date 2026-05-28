@@ -1,0 +1,213 @@
+﻿@{
+    ViewData["Title"] = "Amazon";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon - Red de Distribución y Colaboradores</title>
+    <style>
+        :root {
+            --primary-color: #232f3e; /* Azul oscuro corporativo de Amazon */
+            --secondary-color: #eaeded; /* Gris claro de fondo de Amazon */
+            --accent-color: #ff9900; /* Naranja característico de Amazon */
+            --text-color: #111111;
+            --light-text: #565959;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--light-text);
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        /* Componentes de Medios (Imágenes y Videos) */
+        .media-container {
+            margin: 30px 0;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #000;
+        }
+
+            .media-container img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+        /* Contenedor Responsive para Video (Proporción 16:9) */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+            .video-wrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+
+        .caption {
+            background-color: #f8f9fa;
+            padding: 12px;
+            font-size: 0.9rem;
+            color: var(--light-text);
+            text-align: center;
+            border-top: 1px solid #dee2e6;
+        }
+
+        /* Grid de Beneficios para Distribuidores */
+        .features-grid {
+            display: flex;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            flex: 1;
+            min-width: 250px;
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+        }
+
+            .feature-card h3 {
+                color: var(--primary-color);
+                margin-bottom: 10px;
+                font-size: 1.2rem;
+                border-left: 3px solid var(--accent-color);
+                padding-left: 8px;
+            }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+            color: var(--light-text);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Amazon</h1>
+        <div class="subtitle">Logística global y redes de distribución para socios comerciales</div>
+
+        <p>
+            <strong>Amazon</strong> ha revolucionado el comercio electrónico global mediante una red de distribución sin precedentes. A través de programas clave como <em>Fulfillment by Amazon (FBA)</em>, la compañía no actúa únicamente como un canal de venta directa, sino como el distribuidor y operador logístico principal para millones de empresas externas. Este modelo descentralizado permite que distribuidores de cualquier escala almacenen sus inventarios directamente en los centros de Amazon, delegando el empaque, el envío rápido y la atención al cliente a su infraestructura de nivel mundial.
+        </p>
+
+        <h2>Centros de Fulfillment: El corazón de la distribución</h2>
+        <p>
+            La espina dorsal de la distribución de Amazon radica en sus centros de cumplimiento masivos y altamente automatizados. En estos espacios, la inteligencia artificial coordina el almacenamiento óptimo de mercancías enviadas por miles de distribuidores asociados. Esto garantiza que cuando un cliente final realiza un pedido, los procesos de preparación y despacho de última milla se ejecuten en cuestión de minutos, habilitando entregas en el mismo día o al día siguiente.
+        </p>
+
+        <!-- Sección de Imagen corporativa -->
+        <div class="media-container">
+            <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1100&q=80" alt="Centro de Fulfillment y Distribución Automática de Amazon">
+            <div class="caption">Centros logísticos globales que unifican inventarios de miles de distribuidores externos independientes.</div>
+        </div>
+
+        <h2>Beneficios del Ecosistema de Distribución de Amazon</h2>
+        <p>
+            Convertirse en un socio distribuidor dentro de la red de Amazon desbloquea capacidades tecnológicas y logísticas inmediatas, permitiendo competir globalmente con costos de operación optimizados.
+        </p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Envío con Amazon Prime</h3>
+                <p style="font-size: 0.95rem;">Los productos de los distribuidores asociados califican automáticamente para envíos gratuitos y rápidos, impulsando significativamente sus tasas de conversión.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Algoritmos de Predicción</h3>
+                <p style="font-size: 0.95rem;">Sistemas avanzados de datos que ayudan a prever la demanda regional, permitiendo un posicionamiento de stock eficiente en los almacenes cercanos al comprador.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Escalabilidad Internacional</h3>
+                <p style="font-size: 0.95rem;">Acceso inmediato a fronteras internacionales. Amazon gestiona las aduanas, exportaciones y soporte multi-idioma para el canal de distribución.</p>
+            </div>
+        </div>
+
+        <h2>Innovación en Distribución de Última Milla</h2>
+        <p>
+            A través de las siguientes soluciones avanzadas, Amazon sigue redefiniendo los estándares de distribución global mediante el despliegue de tecnologías robóticas en almacenes y flotas de transporte electrificadas y optimizadas por algoritmos.
+        </p>
+
+        <!-- Sección de Video (Responsive) -->
+        <div class="media-container">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/Yg5I_Xo0n6c" title="Amazon Supply Chain and Distribution Network" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="caption">Vídeo demostrativo: Automatización, robótica y flujos de distribución en la red global de Amazon.</div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Amazon.com, Inc. o sus filiales. Sección de socios y distribuidores logísticos optimizada para ASP.NET Core MVC.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

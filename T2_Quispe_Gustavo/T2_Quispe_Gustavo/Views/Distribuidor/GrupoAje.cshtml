@@ -1,0 +1,211 @@
+﻿@{
+    ViewData["Title"] = "Grupo AJE";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo AJE - Red Global de Distribución e Innovación</title>
+    <style>
+        :root {
+            --primary-color: #008751; /* Verde corporativo que evoca sostenibilidad e identidad de marca */
+            --secondary-color: #f7f9f8; /* Fondo gris claro con un ligero matiz limpio */
+            --accent-color: #e30613; /* Rojo dinámico para destacar títulos y elementos clave */
+            --text-color: #2b2b2b;
+            --light-text: #6c757d;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--light-text);
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        /* Componentes de Medios (Imágenes y Videos) */
+        .media-container {
+            margin: 30px 0;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #000;
+        }
+
+            .media-container img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+        /* Contenedor Responsive para Video (Proporción 16:9) */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+            .video-wrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+
+        .caption {
+            background-color: #f8f9fa;
+            padding: 12px;
+            font-size: 0.9rem;
+            color: var(--light-text);
+            text-align: center;
+            border-top: 1px solid #dee2e6;
+        }
+
+        /* Grid de Estrategia de Distribución */
+        .features-grid {
+            display: flex;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            flex: 1;
+            min-width: 250px;
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+        }
+
+            .feature-card h3 {
+                color: var(--primary-color);
+                margin-bottom: 10px;
+                font-size: 1.2rem;
+                border-left: 3px solid var(--accent-color);
+                padding-left: 8px;
+            }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+            color: var(--light-text);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Grupo AJE</h1>
+        <div class="subtitle">Democratizando el consumo a través de un modelo de distribución capilar y eficiente</div>
+
+        <p>
+            El <strong>Grupo AJE</strong> es una de las empresas multinacionales más emblemáticas nacidas en el Perú, con presencia en más de 20 países de Latinoamérica, Asia y África. Desde sus orígenes, la estrategia maestra de la compañía se ha centrado en romper paradigmas en el sector de bebidas masivas. Su modelo de negocio destaca por un enfoque riguroso en la eficiencia logística y una **red de distribución propia y descentralizada**, permitiendo ofrecer productos de alta calidad a "precios justos" para los sectores emergentes.
+        </p>
+
+        <h2>Modelo de Distribución Capilar: Llegando al último rincón</h2>
+        <p>
+            A diferencia de los modelos tradicionales centralizados, Grupo AJE estructuró su crecimiento basándose en una red capilar de microempresarios y distribuidores independientes autorizados. Este enfoque delega la última milla a socios locales que conocen a profundidad el terreno, facilitando el abastecimiento diario a millones de pequeñas bodegas y comercios tradicionales en zonas suburbanas y rurales donde las grandes corporaciones no lograban penetrar de manera rentable.
+        </p>
+
+        <div class="media-container">
+            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1100&q=80" alt="Cadena de suministro y distribución global de Grupo AJE">
+            <div class="caption">Estrategias de distribución masiva y gestión logística orientada a mercados emergentes a nivel mundial.</div>
+        </div>
+
+        <h2>Ventajas del Sistema de Distribuidores de AJE</h2>
+        <p>
+            El ecosistema de distribución de Grupo AJE optimiza costos operativos fijos, transformándolos en costos variables competitivos mediante alianzas estratégicas con flotas locales.
+        </p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Distribución Tercerizada Eficiente</h3>
+                <p style="font-size: 0.95rem;">AJE se enfoca en la producción de alta velocidad y delega el transporte y entrega a redes locales, reduciendo drásticamente la inversión en flotas estáticas.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Penetración en Canales Tradicionales</h3>
+                <p style="font-size: 0.95rem;">Máxima capilaridad orientada al mercado de bodegas y puestos de abasto locales, asegurando la disponibilidad inmediata frente al consumidor del día a día.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Sostenibilidad y Revolución Verde</h3>
+                <p style="font-size: 0.95rem;">Integración de cadenas de valor sostenibles (como la línea Bio Amayu) que conectan a comunidades amazónicas directamente como distribuidores y proveedores de la materia prima.</p>
+            </div>
+        </div>
+
+        <h2>Innovación en la Cadena de Suministro</h2>
+        <p>
+            La filosofía de "actuar localmente pero pensar globalmente" le ha permitido a Grupo AJE replicar su exitosa estrategia de distribución peruana en mercados tan complejos y diversos como Tailandia, Vietnam, Indonesia y Egipto, adaptando sus flujos logísticos al contexto urbano de cada país.
+        </p>
+
+        <div class="media-container">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/stHPyAWuJkg" title="Grupo AJE Logística Internacional" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="caption">Vídeo de referencia: Despliegue operativo e impacto comercial en cadenas de suministro de consumo masivo.</div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Grupo AJE. Todos los derechos reservados. Módulo de contenidos logísticos optimizado para ASP.NET Core MVC.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
