@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\upn_i\Desktop\EvidenciaT2\T2_Quispe_Gustavo\T2_Quispe_Gustavo
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/upn_i/Desktop/EvidenciaT2/T2_Quispe_Gustavo/T2_Quispe_Gustavo/Views/Distribuidor/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpYnVpZG9yXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/upn_i/Desktop/EvidenciaT2/T2_Quispe_Gustavo/T2_Quispe_Gustavo/Views/Distribuidor/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpYnVpZG9yXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/upn_i/Desktop/EvidenciaT2/T2_Quispe_Gustavo/T2_Quispe_Gustavo/Views/Distribuidor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpYnVpZG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
